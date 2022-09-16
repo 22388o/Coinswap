@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+
+    
+    
+
+<html lang="en-us">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page title -->
+    <title>
+SWAP
+</title>
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript if it is in head -->
+    
+        <script crossorigin="anonymous" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
+    
+<style>
+
+</style>
+
+
+    <style>
+    .main-panel {
+        color: navy;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://coinswap.click">Coin Swap</a>
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="https://coinswap.click/convert/">Convert</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://coinswap.click/rates/">Rates</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://coinswap.click/feedback/">Feedback</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://coinswap.click/faq/">FAQ</a></li>
+      <li class="nav-item"><a target="_blank" class="nav-link" href="https://amboss.space/node/0223d8c509b7b47eda350703a8e29ff0dc408c99d3e1d87f1a70e4d6196f6c8ce3">Lightning Node</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+
+
+
+        
+
+<div class="form-group container-fluid">
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+            </div>
+        </div>
+
+    <form method="get" action="/convert/">
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+                    
+
+
+    <div id="div_id_amount_from" class="control-group">
+        
+            <label for="id_amount_from" class="control-label ">
+                I want to convert ..
+            </label>
+        
+
+        
+
+        
+
+        
+            <div class="controls">
+                
+                    <input type="number" name="amount_from" value="0.01" step="any" class="numberinput" id="id_amount_from">
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+    </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+                    
+
+
+    <div id="div_id_from_coin" class="control-group">
+        
+            <label for="id_from_coin" class="control-label ">
+                from coin
+            </label>
+        
+
+        
+
+        
+
+        
+            <div class="controls">
+                
+                    <select name="from_coin" class="select" id="id_from_coin">
+  <option value="BTC" selected>Bitcoin</option>
+
+  <option value="BTC-LN">Bitcoin (Lightning)</option>
+
+  <option value="DASH">Dash</option>
+
+  <option value="LTC">Litecoin</option>
+
+  <option value="XMR">Monero</option>
+
+</select>
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+    </div>
+
+
+            </div>
+        </div>
+
+    <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+                    
+
+
+    <div id="div_id_to_coin" class="control-group">
+        
+            <label for="id_to_coin" class="control-label ">
+                to coin
+            </label>
+        
+
+        
+
+        
+
+        
+            <div class="controls">
+                
+                    <select name="to_coin" class="select" id="id_to_coin">
+  <option value="BTC">Bitcoin</option>
+
+  <option value="BTC-LN">Bitcoin (Lightning)</option>
+
+  <option value="DASH">Dash</option>
+
+  <option value="LTC">Litecoin</option>
+
+  <option value="XMR" selected>Monero</option>
+
+</select>
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+    </div>
+
+
+            </div>
+    </div>
+    <div class="row">
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">Calculate amount</button>
+        </div>
+    </div>
+    </form>
+
+    <div class="row">
+        <br>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center">
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center">
+                <form method="get" action="https://coinswap.click/swap-step-2/">
+                    <input type="hidden" name="pair" value="/">
+                    <input type="hidden" name="deposit_amount" value="">
+                    <input type="hidden" name="what" value="swap1">
+                    <button type="submit" class="btn btn-success"> &#128176; Swap this amount right now! &#128176;</button>
+                </form>
+        </div>
+        <div class="col-sm-12 d-flex justify-content-center">
+            <p>
+                <i>You can convert up to 3500$.</i>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <div>
+    </div>
+</div>
+
+
+<!-- Bootstrap JavaScript if it is in body -->
+
+
+
+
+</body>
+
+</html>
+
